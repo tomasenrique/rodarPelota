@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\codigo\ControladorCamara.cs" />
     <Compile Include="Assets\codigo\ControladorJugador.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/D/Lenguajes/Unity/rodarPelota/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
