@@ -24,6 +24,17 @@ public class ControladorJugador : MonoBehaviour
         rigidbody = GetComponent<Rigidbody>(); // esta es la referencia al componente de rigibody
     }
 
+    // OnTriggerEnter is called when the Collider other enters the trigger
+    private void OnTriggerEnter(Collider other)
+    {
+        // En este metodo se detectara la colision entre la pelota y el cubo, siembre que este tenga activado su 'Is Trigger' en Box Collider
+
+        Debug.Log("Colision"); // mostrara un mensaje en consola cuando la pelota choque con el cubo
+        Destroy(other.gameObject); // 'other' es el collider del objeto con el que se choca y con esto se eliminara el cubo.
+
+
+    }
+
 
 
 
